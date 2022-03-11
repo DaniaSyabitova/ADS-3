@@ -17,15 +17,15 @@ int cbinsearch(int *arr, int size, int value) {
         mid--;
       }
       break;
-    }
-    else {
+    } else {
       if (arr[mid] > value)
       j = mid;
-    else
+    else {
       i = mid + 1;
       }
-  }
+    }
   if (counter != 0)
     return counter;
-  return 0; // если ничего не найдено
+  return 0;
+  }
 }
