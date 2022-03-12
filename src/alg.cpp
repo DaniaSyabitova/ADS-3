@@ -17,10 +17,9 @@ int cbinsearch(int *arr, int size, int value) {
         mid--;
       }
       break;
-    } else {
-      if (arr[mid] > value) {
+    } else if (arr[mid] > value) {
       j = mid;
-      } else {
+      } else if (arr[mid] < value) {
       i = mid + 1;
       }
     }
@@ -28,4 +27,3 @@ int cbinsearch(int *arr, int size, int value) {
     return counter;
   return 0;
   }
-}
